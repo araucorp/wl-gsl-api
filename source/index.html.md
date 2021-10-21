@@ -20,12 +20,12 @@ code_clipboard: true
 
 meta:
   - name: description
-    content: Documentation for the Kittn API
+    content: Documentation for the Kitten API
 ---
 
 # Introduction
 
-Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
+Welcome to the Kitten(wl-gsl-api) API! You can use our API to access Kitten API endpoints, which can get information on various cats, kittens, and breeds in our database.
 
 We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
 
@@ -36,15 +36,15 @@ This example API documentation page was created with [Slate](https://github.com/
 > To authorize, use this code:
 
 ```ruby
-require 'kittn'
+require 'Kitten'
 
-api = Kittn::APIClient.authorize!('meowmeowmeow')
+api = Kitten::APIClient.authorize!('meowmeowmeow')
 ```
 
 ```python
-import kittn
+import Kitten
 
-api = kittn.authorize('meowmeowmeow')
+api = Kitten.authorize('meowmeowmeow')
 ```
 
 ```shell
@@ -54,16 +54,16 @@ curl "api_endpoint_here" \
 ```
 
 ```javascript
-const kittn = require('kittn');
+const Kitten = require('Kitten');
 
-let api = kittn.authorize('meowmeowmeow');
+let api = Kitten.authorize('meowmeowmeow');
 ```
 
 > Make sure to replace `meowmeowmeow` with your API key.
 
-Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our [developer portal](http://example.com/developers).
+Kitten uses API keys to allow access to the API. You can register a new Kitten API key at our [developer portal](http://example.com/developers).
 
-Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:
+Kitten expects for the API key to be included in all API requests to the server in a header that looks like the following:
 
 `Authorization: meowmeowmeow`
 
@@ -76,16 +76,16 @@ You must replace <code>meowmeowmeow</code> with your personal API key.
 ## Get All Kittens
 
 ```ruby
-require 'kittn'
+require 'Kitten'
 
-api = Kittn::APIClient.authorize!('meowmeowmeow')
+api = Kitten::APIClient.authorize!('meowmeowmeow')
 api.kittens.get
 ```
 
 ```python
-import kittn
+import Kitten
 
-api = kittn.authorize('meowmeowmeow')
+api = Kitten.authorize('meowmeowmeow')
 api.kittens.get()
 ```
 
@@ -95,9 +95,9 @@ curl "http://example.com/api/kittens" \
 ```
 
 ```javascript
-const kittn = require('kittn');
+const Kitten = require('Kitten');
 
-let api = kittn.authorize('meowmeowmeow');
+let api = Kitten.authorize('meowmeowmeow');
 let kittens = api.kittens.get();
 ```
 
@@ -142,16 +142,16 @@ Remember — a happy kitten is an authenticated kitten!
 ## Get a Specific Kitten
 
 ```ruby
-require 'kittn'
+require 'Kitten'
 
-api = Kittn::APIClient.authorize!('meowmeowmeow')
+api = Kitten::APIClient.authorize!('meowmeowmeow')
 api.kittens.get(2)
 ```
 
 ```python
-import kittn
+import Kitten
 
-api = kittn.authorize('meowmeowmeow')
+api = Kitten.authorize('meowmeowmeow')
 api.kittens.get(2)
 ```
 
@@ -161,9 +161,9 @@ curl "http://example.com/api/kittens/2" \
 ```
 
 ```javascript
-const kittn = require('kittn');
+const Kitten = require('Kitten');
 
-let api = kittn.authorize('meowmeowmeow');
+let api = Kitten.authorize('meowmeowmeow');
 let max = api.kittens.get(2);
 ```
 
@@ -196,16 +196,16 @@ ID | The ID of the kitten to retrieve
 ## Delete a Specific Kitten
 
 ```ruby
-require 'kittn'
+require 'Kitten'
 
-api = Kittn::APIClient.authorize!('meowmeowmeow')
+api = Kitten::APIClient.authorize!('meowmeowmeow')
 api.kittens.delete(2)
 ```
 
 ```python
-import kittn
+import Kitten
 
-api = kittn.authorize('meowmeowmeow')
+api = Kitten.authorize('meowmeowmeow')
 api.kittens.delete(2)
 ```
 
@@ -216,9 +216,9 @@ curl "http://example.com/api/kittens/2" \
 ```
 
 ```javascript
-const kittn = require('kittn');
+const Kitten = require('Kitten');
 
-let api = kittn.authorize('meowmeowmeow');
+let api = Kitten.authorize('meowmeowmeow');
 let max = api.kittens.delete(2);
 ```
 
